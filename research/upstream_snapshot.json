@@ -1,0 +1,81 @@
+{
+  "upstream": {
+    "owner": "THUDM",
+    "repo": "GraphMAE",
+    "source_url": "https://github.com/THUDM/GraphMAE",
+    "local_path": "/Users/Rb/Documents/LLM based projects /sources/THUDM__GraphMAE",
+    "branch": "main",
+    "default_branch": "main",
+    "commit": "b14f080c919257b495e3cb6474286d5252d6a635",
+    "fork_requested": false,
+    "fork_result": ""
+  },
+  "audit": {
+    "file_count": 41,
+    "text_file_count": 32,
+    "top_suffixes": [
+      [
+        ".py",
+        24
+      ],
+      [
+        "<none>",
+        5
+      ],
+      [
+        ".sh",
+        4
+      ],
+      [
+        ".md",
+        2
+      ],
+      [
+        ".png",
+        2
+      ],
+      [
+        ".jpg",
+        1
+      ],
+      [
+        ".pth",
+        1
+      ],
+      [
+        ".txt",
+        1
+      ]
+    ],
+    "style_counts": {
+      "snake_case": 13,
+      "PascalCase": 3,
+      "other": 21,
+      "hidden": 4
+    },
+    "token_hits": {
+      "TODO": [
+        "chem/util.py"
+      ]
+    },
+    "findings": [
+      "No dedicated docs directory detected for architecture or operations guidance.",
+      "No obvious tests directory or test files detected.",
+      "No GitHub Actions workflow detected for repeatable checks.",
+      "No container packaging signal detected, which makes demos and deployment less portable.",
+      "Mixed filename conventions detected: PascalCase, snake_case.",
+      "Open maintenance markers detected: TODO in 1 file(s).",
+      "Large files that may benefit from decomposition: chem/loader.py (1334 lines)."
+    ],
+    "strengths": [
+      "Repository has a top-level README."
+    ],
+    "largest_files": [
+      "chem/loader.py (1334 lines)"
+    ],
+    "has_tests": false,
+    "has_docs": false,
+    "has_ci": false,
+    "has_docker": false
+  }
+}

@@ -1,0 +1,114 @@
+
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>GraphMAE Self-Supervised Graph Lab</title>
+          <link rel="stylesheet" href="./styles.css">
+        </head>
+        <body class="surface-paper">
+          <div class="page layout-horizon eyebrow-solid headline-normal modules-3 hero-align-split">
+            <section class="hero">
+              <div class="panel hero-copy">
+                <span class="eyebrow" data-health>Decision Workbench</span>
+                <h1 id="project-title">GraphMAE Self-Supervised Graph Lab</h1>
+                <p id="project-summary" class="lead">Create a self-supervised graph lab for pretraining, downstream transfer, and graph representation analysis with polished demos.</p>
+                <ul id="project-tags" class="tag-list">
+                  <li>graphmae</li><li>graph</li><li>self-supervised</li><li>gnn</li>
+                </ul>
+              </div>
+              <div class="panel hero-side">
+                <div class="metric-grid">
+                  <article class='card'><span>Model Lift</span><strong>82%</strong><em>+6.4%</em></article>
+<article class='card'><span>Serving P95</span><strong>181ms</strong><em>-12ms</em></article>
+<article class='card'><span>Data Freshness</span><strong>5h</strong><em>steady</em></article>
+                </div>
+                <div class="mini-grid">
+                  <article class='mini-card'><span>Project Type</span><strong>ML</strong></article><article class='mini-card'><span>Domain</span><strong>Self-Supervised Graph Learning</strong></article><article class='mini-card'><span>Application</span><strong>Decision Workbench</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
+                </div>
+              </div>
+            </section>
+            <section class="app-grid">
+              <article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Workbench 01</span>
+            <h2>Candidate Builder</h2>
+            <p>Evaluate a single candidate, item, or entity against the decision logic.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;features&quot;: {
+    &quot;engagement_score&quot;: 133,
+    &quot;tenure_days&quot;: 363,
+    &quot;payment_miss_count&quot;: 3,
+    &quot;segment&quot;: &quot;mid_market&quot;,
+    &quot;priority_flag&quot;: true
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/score" data-input-mode="json">Evaluate Candidate</button>
+          </div>
+          <pre class="js-output">Candidate score and top factors will appear here.</pre>
+        </article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Workbench 02</span>
+            <h2>Tradeoff Explorer</h2>
+            <p>Compare multiple operating metrics against a baseline to understand the tradeoffs.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 78.7,
+    &quot;activation&quot;: 67.5,
+    &quot;retention&quot;: 74.4,
+    &quot;revenue&quot;: 133.9
+  },
+  &quot;baseline&quot;: {
+    &quot;acquisition&quot;: 72.4,
+    &quot;activation&quot;: 62.1,
+    &quot;retention&quot;: 68.45,
+    &quot;revenue&quot;: 123.19
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Explore Tradeoffs</button>
+          </div>
+          <pre class="js-output">Tradeoff summary will appear here.</pre>
+        </article>
+<article class="panel module js-module span-wide">
+          <div class="module-header">
+            <span>Workbench 03</span>
+            <h2>Next-Step Planner</h2>
+            <p>Turn the current signals into an implementation-ready next-step recommendation.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;prompt&quot;: &quot;Recommend the next best action for GraphMAE Self-Supervised Graph Lab.&quot;,
+  &quot;features&quot;: {
+    &quot;engagement_score&quot;: 133,
+    &quot;tenure_days&quot;: 363,
+    &quot;payment_miss_count&quot;: 3,
+    &quot;segment&quot;: &quot;mid_market&quot;,
+    &quot;priority_flag&quot;: true
+  },
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 78.7,
+    &quot;activation&quot;: 67.5,
+    &quot;retention&quot;: 74.4,
+    &quot;revenue&quot;: 133.9
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Plan Next Step</button>
+          </div>
+          <pre class="js-output">Recommended actions and rationale will appear here.</pre>
+        </article>
+            </section>
+            <footer class="footer">
+              <span>Self-Supervised Graph Learning • ML • Decision Workbench</span>
+              <span>graphmae-self-supervised-graph-lab</span>
+            </footer>
+          </div>
+          <script id="bootstrap-data" type="application/json">{"project": {"slug": "graphmae-self-supervised-graph-lab", "title": "GraphMAE Self-Supervised Graph Lab", "project_type": "ml", "domain": "Self-Supervised Graph Learning", "summary": "Create a self-supervised graph lab for pretraining, downstream transfer, and graph representation analysis with polished demos.", "tags": ["graphmae", "graph", "self-supervised", "gnn"]}, "app_archetype": "workbench", "ui_profile": {"layout": "horizon", "surface": "paper", "font_stack": "\"Manrope\", \"Segoe UI\", sans-serif", "radius": 24, "shadow": 50, "eyebrow_style": "solid", "module_columns": 3, "hero_align": "split", "headline_mode": "normal"}, "app_modules": [{"label": "Workbench 01", "title": "Candidate Builder", "description": "Evaluate a single candidate, item, or entity against the decision logic.", "endpoint": "/score", "input_mode": "json", "cta": "Evaluate Candidate", "prefill": "{\n  \"features\": {\n    \"engagement_score\": 133,\n    \"tenure_days\": 363,\n    \"payment_miss_count\": 3,\n    \"segment\": \"mid_market\",\n    \"priority_flag\": true\n  }\n}", "hint": "Candidate score and top factors will appear here.", "span": "normal"}, {"label": "Workbench 02", "title": "Tradeoff Explorer", "description": "Compare multiple operating metrics against a baseline to understand the tradeoffs.", "endpoint": "/analyze", "input_mode": "json", "cta": "Explore Tradeoffs", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 78.7,\n    \"activation\": 67.5,\n    \"retention\": 74.4,\n    \"revenue\": 133.9\n  },\n  \"baseline\": {\n    \"acquisition\": 72.4,\n    \"activation\": 62.1,\n    \"retention\": 68.45,\n    \"revenue\": 123.19\n  }\n}", "hint": "Tradeoff summary will appear here.", "span": "normal"}, {"label": "Workbench 03", "title": "Next-Step Planner", "description": "Turn the current signals into an implementation-ready next-step recommendation.", "endpoint": "/recommend", "input_mode": "json", "cta": "Plan Next Step", "prefill": "{\n  \"prompt\": \"Recommend the next best action for GraphMAE Self-Supervised Graph Lab.\",\n  \"features\": {\n    \"engagement_score\": 133,\n    \"tenure_days\": 363,\n    \"payment_miss_count\": 3,\n    \"segment\": \"mid_market\",\n    \"priority_flag\": true\n  },\n  \"metrics\": {\n    \"acquisition\": 78.7,\n    \"activation\": 67.5,\n    \"retention\": 74.4,\n    \"revenue\": 133.9\n  }\n}", "hint": "Recommended actions and rationale will appear here.", "span": "wide"}], "sample_features": {"engagement_score": 133, "tenure_days": 363, "payment_miss_count": 3, "segment": "mid_market", "priority_flag": true}, "sample_metrics": {"acquisition": 78.7, "activation": 67.5, "retention": 74.4, "revenue": 133.9}, "knowledge_base": ["GraphMAE Self-Supervised Graph Lab is positioned as a Self-Supervised Graph Learning starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Create a self-supervised graph lab for pretraining, downstream transfer, and graph representation analysis with polished demos.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on graphmae, graph, self-supervised, gnn.", "Source paper: GraphMAE: Self-Supervised Masked Graph Autoencoders", "Official repo: https://github.com/THUDM/GraphMAE", "Production differentiation focus: Turn upstream self-supervised graph learning capabilities into a production-style application with operations-facing workflows.; Add deployment packaging, monitoring hooks, and screenshot-ready demos instead of notebook-only output.; Connect model behavior to concrete business decisions so the project is easier to evaluate and present."], "dashboard_metrics": [{"label": "Model Lift", "value": "82%", "delta": "+6.4%"}, {"label": "Serving P95", "value": "181ms", "delta": "-12ms"}, {"label": "Data Freshness", "value": "5h", "delta": "steady"}]}</script>
+          <script src="./app.js"></script>
+        </body>
+        </html>

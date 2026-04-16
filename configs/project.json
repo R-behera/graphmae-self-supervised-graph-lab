@@ -1,0 +1,117 @@
+{
+  "slug": "graphmae-self-supervised-graph-lab",
+  "title": "GraphMAE Self-Supervised Graph Lab",
+  "project_type": "ml",
+  "domain": "Self-Supervised Graph Learning",
+  "summary": "Create a self-supervised graph lab for pretraining, downstream transfer, and graph representation analysis with polished demos.",
+  "tags": [
+    "graphmae",
+    "graph",
+    "self-supervised",
+    "gnn"
+  ],
+  "accent": "#6a2cc8",
+  "secondary_accent": "#2c9ea9",
+  "dashboard_metrics": [
+    {
+      "label": "Model Lift",
+      "value": "82%",
+      "delta": "+6.4%"
+    },
+    {
+      "label": "Serving P95",
+      "value": "181ms",
+      "delta": "-12ms"
+    },
+    {
+      "label": "Data Freshness",
+      "value": "5h",
+      "delta": "steady"
+    }
+  ],
+  "sample_features": {
+    "engagement_score": 133,
+    "tenure_days": 363,
+    "payment_miss_count": 3,
+    "segment": "mid_market",
+    "priority_flag": true
+  },
+  "sample_metrics": {
+    "acquisition": 78.7,
+    "activation": 67.5,
+    "retention": 74.4,
+    "revenue": 133.9
+  },
+  "knowledge_base": [
+    "GraphMAE Self-Supervised Graph Lab is positioned as a Self-Supervised Graph Learning starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Create a self-supervised graph lab for pretraining, downstream transfer, and graph representation analysis with polished demos.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on graphmae, graph, self-supervised, gnn.",
+    "Source paper: GraphMAE: Self-Supervised Masked Graph Autoencoders",
+    "Official repo: https://github.com/THUDM/GraphMAE",
+    "Production differentiation focus: Turn upstream self-supervised graph learning capabilities into a production-style application with operations-facing workflows.; Add deployment packaging, monitoring hooks, and screenshot-ready demos instead of notebook-only output.; Connect model behavior to concrete business decisions so the project is easier to evaluate and present."
+  ],
+  "research_key": "graphmae-self-supervised-graph-lab",
+  "research_score": 9.63,
+  "paper_title": "GraphMAE: Self-Supervised Masked Graph Autoencoders",
+  "paper_url": "https://arxiv.org/abs/2205.10803",
+  "repo_url": "https://github.com/THUDM/GraphMAE",
+  "repo_org": "THUDM",
+  "why_high_score": [
+    "Official or primary upstream repo with 585 GitHub stars.",
+    "Active maintenance signal with recent push at 2023-04-12T11:15:23Z.",
+    "GraphMAE: Self-Supervised Masked Graph Autoencoders in KDD'22"
+  ],
+  "differentiation_hooks": [
+    "Turn upstream self-supervised graph learning capabilities into a production-style application with operations-facing workflows.",
+    "Add deployment packaging, monitoring hooks, and screenshot-ready demos instead of notebook-only output.",
+    "Connect model behavior to concrete business decisions so the project is easier to evaluate and present."
+  ],
+  "app_archetype": "workbench",
+  "ui_profile": {
+    "layout": "horizon",
+    "surface": "paper",
+    "font_stack": "\"Manrope\", \"Segoe UI\", sans-serif",
+    "radius": 24,
+    "shadow": 50,
+    "eyebrow_style": "solid",
+    "module_columns": 3,
+    "hero_align": "split",
+    "headline_mode": "normal"
+  },
+  "app_modules": [
+    {
+      "label": "Workbench 01",
+      "title": "Candidate Builder",
+      "description": "Evaluate a single candidate, item, or entity against the decision logic.",
+      "endpoint": "/score",
+      "input_mode": "json",
+      "cta": "Evaluate Candidate",
+      "prefill": "{\n  \"features\": {\n    \"engagement_score\": 133,\n    \"tenure_days\": 363,\n    \"payment_miss_count\": 3,\n    \"segment\": \"mid_market\",\n    \"priority_flag\": true\n  }\n}",
+      "hint": "Candidate score and top factors will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Workbench 02",
+      "title": "Tradeoff Explorer",
+      "description": "Compare multiple operating metrics against a baseline to understand the tradeoffs.",
+      "endpoint": "/analyze",
+      "input_mode": "json",
+      "cta": "Explore Tradeoffs",
+      "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 78.7,\n    \"activation\": 67.5,\n    \"retention\": 74.4,\n    \"revenue\": 133.9\n  },\n  \"baseline\": {\n    \"acquisition\": 72.4,\n    \"activation\": 62.1,\n    \"retention\": 68.45,\n    \"revenue\": 123.19\n  }\n}",
+      "hint": "Tradeoff summary will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Workbench 03",
+      "title": "Next-Step Planner",
+      "description": "Turn the current signals into an implementation-ready next-step recommendation.",
+      "endpoint": "/recommend",
+      "input_mode": "json",
+      "cta": "Plan Next Step",
+      "prefill": "{\n  \"prompt\": \"Recommend the next best action for GraphMAE Self-Supervised Graph Lab.\",\n  \"features\": {\n    \"engagement_score\": 133,\n    \"tenure_days\": 363,\n    \"payment_miss_count\": 3,\n    \"segment\": \"mid_market\",\n    \"priority_flag\": true\n  },\n  \"metrics\": {\n    \"acquisition\": 78.7,\n    \"activation\": 67.5,\n    \"retention\": 74.4,\n    \"revenue\": 133.9\n  }\n}",
+      "hint": "Recommended actions and rationale will appear here.",
+      "span": "wide"
+    }
+  ]
+}
