@@ -1,4 +1,13 @@
+# Data notes
 
-# Data Notes
+This project is framed around `Anti-Money Laundering`.
 
-This folder holds generated examples for GraphMAE Self-Supervised Graph Lab. Run `python scripts/bootstrap_data.py` to create mock request and response payloads under `data/mock/`.
+## Intended inputs
+
+- Business or case context from the target user
+- Historical metrics or baseline comparisons
+- Retrieval or workflow context where relevant
+
+## Use-case reminder
+
+AML teams rarely have enough labeled cases to train strong network models from scratch.

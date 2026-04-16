@@ -1,69 +1,21 @@
-# Outreach email drafts
+# Outreach draft
 
-## Draft for Paper authors
+Subject: Production-style adaptation of AML Network Pretraining Lab
 
-                - To: [add-public-contact-email]
-                - Subject: Built a production-grade adaptation of GraphMAE: Self-Supervised Masked Graph Autoencoders
+Hi,
 
-                Hi Paper authors,
+I adapted this project into a more concrete real-world workflow for AML investigators and model risk teams.
 
-                I built **GraphMAE Self-Supervised Graph Lab**, a production-style adaptation inspired by your work on **GraphMAE: Self-Supervised Masked Graph Autoencoders**.
+Problem:
+AML teams rarely have enough labeled cases to train strong network models from scratch.
 
-                What I changed:
-                - Turn upstream self-supervised graph learning capabilities into a production-style application with operations-facing workflows.
-                - Add deployment packaging, monitoring hooks, and screenshot-ready demos instead of notebook-only output.
-                - Connect model behavior to concrete business decisions so the project is easier to evaluate and present.
+Decision improved:
+Improve suspicious-entity prioritization using better network representations before case review.
 
-                What I noticed in the upstream code or packaging:
-                - No dedicated docs directory detected for architecture or operations guidance.
-- No obvious tests directory or test files detected.
-- No GitHub Actions workflow detected for repeatable checks.
+Business impact target:
+Increase suspicious network recall while reducing manual review waste.
 
-                Why that difference matters:
-                - It makes the system easier to run and explain in a product setting.
-                - It turns the research direction into something operators and stakeholders can actually use.
-                - It creates clearer evaluation and demo artifacts, including UI screenshots and runbooks.
+Repo: https://github.com/R-behera/graphmae-self-supervised-graph-lab
 
-                Repo: https://github.com/R-behera/graphmae-self-supervised-graph-lab
-                Paper: https://arxiv.org/abs/2205.10803
-
-                If useful, I would love any feedback on whether this production framing captures the spirit of the original work well.
-
-                Best,
-                Rajendra Behera
-
-                Note: Add a public email or preferred contact channel before sending.
-
-## Draft for OSS maintainers
-
-                - To: [add-public-contact-email]
-                - Subject: Built a production-grade adaptation of GraphMAE: Self-Supervised Masked Graph Autoencoders
-
-                Hi OSS maintainers,
-
-                I built **GraphMAE Self-Supervised Graph Lab**, a production-style adaptation inspired by your work on **GraphMAE: Self-Supervised Masked Graph Autoencoders**.
-
-                What I changed:
-                - Turn upstream self-supervised graph learning capabilities into a production-style application with operations-facing workflows.
-                - Add deployment packaging, monitoring hooks, and screenshot-ready demos instead of notebook-only output.
-                - Connect model behavior to concrete business decisions so the project is easier to evaluate and present.
-
-                What I noticed in the upstream code or packaging:
-                - No dedicated docs directory detected for architecture or operations guidance.
-- No obvious tests directory or test files detected.
-- No GitHub Actions workflow detected for repeatable checks.
-
-                Why that difference matters:
-                - It makes the system easier to run and explain in a product setting.
-                - It turns the research direction into something operators and stakeholders can actually use.
-                - It creates clearer evaluation and demo artifacts, including UI screenshots and runbooks.
-
-                Repo: https://github.com/R-behera/graphmae-self-supervised-graph-lab
-                Paper: https://arxiv.org/abs/2205.10803
-
-                If useful, I would love any feedback on whether this production framing captures the spirit of the original work well.
-
-                Best,
-                Rajendra Behera
-
-                Note: If no public email exists, prefer GitHub Discussions or Issues.
+Best,
+Rajendra Behera
