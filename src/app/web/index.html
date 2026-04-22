@@ -1,106 +1,29 @@
-
-        <!doctype html>
-        <html lang="en">
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>AML Network Pretraining Lab</title>
-          <link rel="stylesheet" href="./styles.css">
-        </head>
-        <body class="surface-paper">
-          <div class="page layout-horizon eyebrow-solid headline-normal modules-3 hero-align-split">
-            <section class="hero">
-              <div class="panel hero-copy">
-                <span class="eyebrow" data-health>Signal Watchtower</span>
-                <h1 id="project-title">AML Network Pretraining Lab</h1>
-                <p id="project-summary" class="lead">Pretrain graph representations on transaction networks to improve suspicious-entity detection with less labeled data.</p>
-                <ul id="project-tags" class="tag-list">
-                  <li>aml</li><li>graph</li><li>self-supervised</li><li>fraud</li>
-                </ul>
-              </div>
-              <div class="panel hero-side">
-                <div class="metric-grid">
-                  <article class='card'><span>Suspicious Recall</span><strong>85%</strong><em>+7.2%</em></article>
-<article class='card'><span>Manual Review Drop</span><strong>19%</strong><em>+5.0%</em></article>
-<article class='card'><span>Label Need Drop</span><strong>28%</strong><em>+8.0%</em></article>
-                </div>
-                <div class="mini-grid">
-                  <article class='mini-card'><span>Project Type</span><strong>ML</strong></article><article class='mini-card'><span>Domain</span><strong>Anti-Money Laundering</strong></article><article class='mini-card'><span>Application</span><strong>Signal Watchtower</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
-                </div>
-              </div>
-            </section>
-            <section class="app-grid">
-              <article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>AML 01</span>
-            <h2>Network Priority Score</h2>
-            <p>Score a transaction cluster using pretrained graph signals before analyst review.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;features&quot;: {
-    &quot;cross_border_edges&quot;: 18,
-    &quot;shell_entity_links&quot;: 7,
-    &quot;high_risk_jurisdiction_ratio&quot;: 0.34,
-    &quot;beneficial_owner_overlap&quot;: 2
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/score" data-input-mode="json">Score Network</button>
-          </div>
-          <pre class="js-output">AML priority score appears here.</pre>
-        </article>
-<article class="panel module js-module span-wide">
-          <div class="module-header">
-            <span>AML 02</span>
-            <h2>Queue Quality Review</h2>
-            <p>Compare the pretrained model against the prior supervised-only baseline.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;metrics&quot;: {
-    &quot;suspicious_recall&quot;: 85.0,
-    &quot;manual_review_reduction&quot;: 19.0,
-    &quot;case_precision&quot;: 76.0
-  },
-  &quot;baseline&quot;: {
-    &quot;suspicious_recall&quot;: 77.8,
-    &quot;manual_review_reduction&quot;: 14.0,
-    &quot;case_precision&quot;: 72.1
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Review Quality</button>
-          </div>
-          <pre class="js-output">Queue quality delta appears here.</pre>
-        </article>
-<article class="panel module js-module span-normal">
-          <div class="module-header">
-            <span>AML 03</span>
-            <h2>Investigator Brief</h2>
-            <p>Generate the case brief for the next suspicious network review.</p>
-          </div>
-          <textarea class="js-input">{
-  &quot;prompt&quot;: &quot;Write the investigator brief for this suspicious network cluster.&quot;,
-  &quot;features&quot;: {
-    &quot;cross_border_edges&quot;: 18,
-    &quot;high_risk_jurisdiction_ratio&quot;: 0.34
-  },
-  &quot;metrics&quot;: {
-    &quot;suspicious_recall&quot;: 0.85,
-    &quot;case_precision&quot;: 0.76
-  }
-}</textarea>
-          <div class="button-row">
-            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Draft Brief</button>
-          </div>
-          <pre class="js-output">Investigator brief appears here.</pre>
-        </article>
-            </section>
-            <footer class="footer">
-              <span>Anti-Money Laundering • ML • Signal Watchtower</span>
-              <span>graphmae-self-supervised-graph-lab</span>
-            </footer>
-          </div>
-          <script id="bootstrap-data" type="application/json">{"project": {"slug": "graphmae-self-supervised-graph-lab", "title": "AML Network Pretraining Lab", "project_type": "ml", "domain": "Anti-Money Laundering", "summary": "Pretrain graph representations on transaction networks to improve suspicious-entity detection with less labeled data.", "tags": ["aml", "graph", "self-supervised", "fraud"]}, "app_archetype": "watchtower", "ui_profile": {"layout": "horizon", "surface": "paper", "font_stack": "\"Manrope\", \"Segoe UI\", sans-serif", "radius": 24, "shadow": 50, "eyebrow_style": "solid", "module_columns": 3, "hero_align": "split", "headline_mode": "normal"}, "app_modules": [{"label": "AML 01", "title": "Network Priority Score", "description": "Score a transaction cluster using pretrained graph signals before analyst review.", "endpoint": "/score", "input_mode": "json", "cta": "Score Network", "prefill": "{\n  \"features\": {\n    \"cross_border_edges\": 18,\n    \"shell_entity_links\": 7,\n    \"high_risk_jurisdiction_ratio\": 0.34,\n    \"beneficial_owner_overlap\": 2\n  }\n}", "hint": "AML priority score appears here.", "span": "normal"}, {"label": "AML 02", "title": "Queue Quality Review", "description": "Compare the pretrained model against the prior supervised-only baseline.", "endpoint": "/analyze", "input_mode": "json", "cta": "Review Quality", "prefill": "{\n  \"metrics\": {\n    \"suspicious_recall\": 85.0,\n    \"manual_review_reduction\": 19.0,\n    \"case_precision\": 76.0\n  },\n  \"baseline\": {\n    \"suspicious_recall\": 77.8,\n    \"manual_review_reduction\": 14.0,\n    \"case_precision\": 72.1\n  }\n}", "hint": "Queue quality delta appears here.", "span": "wide"}, {"label": "AML 03", "title": "Investigator Brief", "description": "Generate the case brief for the next suspicious network review.", "endpoint": "/recommend", "input_mode": "json", "cta": "Draft Brief", "prefill": "{\n  \"prompt\": \"Write the investigator brief for this suspicious network cluster.\",\n  \"features\": {\n    \"cross_border_edges\": 18,\n    \"high_risk_jurisdiction_ratio\": 0.34\n  },\n  \"metrics\": {\n    \"suspicious_recall\": 0.85,\n    \"case_precision\": 0.76\n  }\n}", "hint": "Investigator brief appears here.", "span": "normal"}], "sample_features": {"cross_border_edges": 18, "shell_entity_links": 7, "high_risk_jurisdiction_ratio": 0.34, "beneficial_owner_overlap": 2, "label_density": 0.03}, "sample_metrics": {"suspicious_recall": 0.85, "manual_review_reduction": 0.19, "case_precision": 0.76, "training_data_need_drop": 0.28}, "knowledge_base": ["User: AML investigators and model risk partners.", "Primary pain: labeled transaction rings are scarce, limiting supervised graph performance.", "Decision output: improved entity prioritization and investigation queue quality.", "Business impact: higher suspicious recall with less manual review waste."], "dashboard_metrics": [{"label": "Suspicious Recall", "value": "85%", "delta": "+7.2%"}, {"label": "Manual Review Drop", "value": "19%", "delta": "+5.0%"}, {"label": "Label Need Drop", "value": "28%", "delta": "+8.0%"}]}</script>
-          <script src="./app.js"></script>
-        </body>
-        </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AML Network Pretraining Lab App</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div id="scene" class="app-scene">
+    <header class="shell hero">
+      <div>
+        <span class="eyebrow">Graph intelligence</span>
+        <h1>AML Network Pretraining Lab</h1>
+        <p>![Demo Screenshot](demo/screenshot.png)</p>
+      </div>
+      <aside class="status-card">
+        <div class="pill">API connected</div>
+        <div class="pill">network investigator</div>
+        <div class="pill">orbital-grid</div>
+      </aside>
+    </header>
+    <section id="metrics" class="grid metrics"></section>
+    <section id="signals" class="grid signals"></section>
+  </div>
+  <script>window.PROJECT_MANIFEST = {"slug": "graphmae-self-supervised-graph-lab", "title": "AML Network Pretraining Lab", "summary": "![Demo Screenshot](demo/screenshot.png)", "domain": "Graph intelligence", "audience": "network investigator", "promise": "Expose entity relationships and signals in a form analysts can actually use.", "hero": ["Production-grade app scaffold with API, CI, tests, Docker, and GitHub Pages landing.", "3D landing surface designed for GitHub Pages and recruiter-friendly storytelling.", "App backend structured for local or container deployment without changing the product narrative."], "kpis": [{"label": "Workflow clarity", "value": "87%", "note": "Operator actions mapped to product stages"}, {"label": "Deployment posture", "value": "API + Docker", "note": "Local and containerized startup paths"}, {"label": "Presentation layer", "value": "3D Pages ready", "note": "Static GitHub landing page included"}], "stages": ["ingest", "validate", "analyze", "decide", "monitor"], "cards": [{"title": "Operator cockpit", "body": "One-screen surface for the network investigator to understand what matters first."}, {"title": "API contract", "body": "Structured endpoints for health, manifest, readiness, and showcase data."}, {"title": "Deployment path", "body": "Repository includes Docker, Compose, CI workflow, and a Pages-ready landing surface."}], "scene": "orbital-grid", "theme": {"bg": "#04070d", "surface": "#0d1320", "ink": "#edf4ff", "muted": "#8d9cb7", "accent": "#6ea8ff", "accent2": "#59ffd1"}, "pages_url": "https://r-behera.github.io/graphmae-self-supervised-graph-lab/", "api_examples": {"health": {"status": "ok", "project": "graphmae-self-supervised-graph-lab"}, "readiness": {"api": "ready", "landing_page": "docs/index.html", "container": "Dockerfile present"}, "signals": [{"name": "Decision coverage", "status": "strong", "detail": "App and landing narrative aligned"}, {"name": "Operator context", "status": "strong", "detail": "Primary user anchored as network investigator"}, {"name": "Delivery path", "status": "ready", "detail": "Pages + containerized app scaffold generated"}]}};</script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
